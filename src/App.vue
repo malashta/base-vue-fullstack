@@ -1,5 +1,5 @@
-<template lang="pug">
-  div#app
+<template>
+  <div id="app"></div>
 </template>
 
 <script>

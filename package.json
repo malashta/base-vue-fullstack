@@ -33,6 +33,7 @@
     "lru-cache": "^4.1.1",
     "route-cache": "^0.4.4",
     "vue": "^2.5.13",
+    "vue-router": "^3.0.1",
     "vue-server-renderer": "^2.5.13",
     "webpack-merge": "^4.1.1"
   },
