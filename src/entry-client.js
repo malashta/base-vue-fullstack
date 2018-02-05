@@ -8,6 +8,20 @@ import Vue from 'vue';
 import 'es6-promise/auto';
 import {createApp} from './app';
 
+Vue.mixin({
+  beforeRouteUpdate (to, from, next) {
+    const {asyncData} = this.$options;
+    if (asyncData) {
+      asyncData({
+        store: this.$store,
+        route: to
+      }).then(next).catch(next);
+    } else {
+      next();
+    }
+  }
+});
+
 const {app, router, store} = (typeof window === 'undefined') ? {} : createApp();
 
 
