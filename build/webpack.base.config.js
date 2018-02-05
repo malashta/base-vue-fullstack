@@ -48,7 +48,7 @@ module.exports = {
         loader: 'vue-loader',
         options: {
           loaders: {
-            'scss': 'vue-style-loader!css-loader'
+            'scss': 'vue-style-loader!css-loader!sass-loader'
           }
         }
       },
@@ -73,7 +73,7 @@ module.exports = {
             use: 'css-loader?minimize',
             fallback: 'vue-style-loader'
           })
-          : ['vue-style-loader', 'css-loader']
+          : ['vue-style-loader', 'css-loader', 'sass-loader']
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,

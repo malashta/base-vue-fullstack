@@ -1,5 +1,5 @@
-<template>
-  <h1>test content</h1>
+<template lang="pug">
+  h1 test content
 </template>
 
 <script>
